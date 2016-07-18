@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
 * {
   box-sizing: border-box;  
 }
@@ -20,10 +22,9 @@ body {
     -o-background-size: cover;
 }
 
-
-nav.header_menu {                          /*Header menu*/
+nav.header_menu {                         
   position: relative;
-  padding: 0 11.8%;
+  padding: 0 19.95%;
   background-color: #c63a5c;
   text-align: center;
   height: 38px;
@@ -36,6 +37,10 @@ nav.header_menu a {
   text-transform: uppercase;
 }
 
+nav.header_menu a:hover {
+  color: #e8ca30;
+}
+
 nav.header_menu ul {
   display: inline-block;
 }
@@ -45,7 +50,6 @@ nav.header_menu ul li {
   margin: 7px 0;
   padding: 0 35px;
   border-left: 1px dotted white;
-  
 }
 
 nav.header_menu ul li:first-child {
@@ -55,4 +59,32 @@ nav.header_menu ul li:first-child {
 
 nav.header_menu ul li:last-child {
   padding-right: 0;
-}                     
+}   
+
+.header_content {
+  padding: 0 19.95%;
+}
+
+.logo {
+  float: left;
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.logo a {
+  color: #336276;
+}
+
+.logo p {
+  font-family: 'Comfortaa';
+  display: inline-block;
+}
+
+.change_car {
+ float: right;
+ margin-top: 20px;
+}
+
+.change_car img {
+  display: block;
+}   
