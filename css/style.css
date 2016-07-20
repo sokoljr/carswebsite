@@ -16,10 +16,10 @@ a {
 
 body {
 	background: url(../img/background.png)  no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
 }
 
 nav.header_menu {                         
@@ -27,10 +27,18 @@ nav.header_menu {
   padding: 0 19.95%;
   background-color: #c63a5c;
   text-align: center;
-  height: 38px;
+  position: relative;
 }
 
-nav.header_menu a {
+nav.header_menu ul li {
+  text-align: center;
+  display: inline-block;
+  margin: 12px 0;
+  padding: 0 35px;
+  border-left: 1px dotted white;
+}
+
+nav.header_menu ul li a {
   font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
   color: white;
   font-size: 12px;
@@ -39,17 +47,6 @@ nav.header_menu a {
 
 nav.header_menu a:hover {
   color: #e8ca30;
-}
-
-nav.header_menu ul {
-  display: inline-block;
-}
-
-nav.header_menu ul li {
-  display: inline-block;
-  margin: 7px 0;
-  padding: 0 35px;
-  border-left: 1px dotted white;
 }
 
 nav.header_menu ul li:first-child {
@@ -65,9 +62,14 @@ nav.header_menu ul li:last-child {
   padding: 0 19.95%;
 }
 
+.left_group {
+  display: inline-block;
+  max-width: 25%;
+}
+
 .logo {
   float: left;
-  margin-top: 20px;
+  padding: 20% 0;
   font-size: 32px;
 }
 
@@ -81,10 +83,12 @@ nav.header_menu ul li:last-child {
 }
 
 .change_car {
- float: right;
- margin-top: 20px;
+  margin-top: 100px;
+  display: inline-block;
 }
 
-.change_car img {
+.change_car a img {
   display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }   
