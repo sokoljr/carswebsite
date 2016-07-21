@@ -62,8 +62,10 @@ nav.header_menu ul li:last-child {
 }   
 
 .header_content {
-  padding: 0 19.97%;
   position: relative;
+  min-height: 566px;
+  max-width: 1154px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -74,7 +76,6 @@ nav.header_menu ul li:last-child {
 .select_car {
 position: absolute;
 top: 300px;
-left: 370px;
 }
 
 .select_car img {
@@ -101,8 +102,8 @@ left: 370px;
 .urgent_call {
   position: absolute;
   background: url(../img/clock.png) no-repeat;
-  left: 55%;
-  transform: translateX(-55%);
+  left: 65%;
+  transform: translateX(-65%);
   top: 20px;
   padding: 21px 0px 40px 65px;
   text-align: center;
