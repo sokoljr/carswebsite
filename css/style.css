@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@font-face {
+  font-family: Comfortaa; 
+  src: url(../fonts/7fonts.ru_ComfortaaRegular.ttf);
+}
 
 * {
   box-sizing: border-box;  
@@ -14,20 +17,20 @@ a {
   clear: both;          
 }
 
-body {
-	background: url(../img/background.png)  no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
+header {
+  background: url(../img/main_bg.jpg) no-repeat;
+  background-position: top center;
+  min-height: 606px;
 }
 
 nav.header_menu {                         
-  position: relative;
-  padding: 0 19.95%;
   background-color: #c63a5c;
   text-align: center;
-  position: relative;
+  box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
+  -moz-webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
+  -ms-webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
+  -o-webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
+  webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
 }
 
 nav.header_menu ul li {
@@ -59,36 +62,98 @@ nav.header_menu ul li:last-child {
 }   
 
 .header_content {
-  padding: 0 19.95%;
-}
-
-.left_group {
-  display: inline-block;
-  max-width: 25%;
+  padding: 0 19.97%;
+  position: relative;
 }
 
 .logo {
+  margin-top: 50px;
   float: left;
-  padding: 20% 0;
-  font-size: 32px;
 }
 
-.logo a {
-  color: #336276;
+.select_car {
+position: absolute;
+top: 300px;
+left: 370px;
 }
 
-.logo p {
-  font-family: 'Comfortaa';
-  display: inline-block;
-}
-
-.change_car {
-  margin-top: 100px;
-  display: inline-block;
-}
-
-.change_car a img {
+.select_car img {
   display: block;
-  max-width: 100%;
-  margin: 0 auto;
-}   
+}
+
+.best_company {
+  position: absolute;
+  background: url(../img/gold-medal.png) no-repeat;
+  left: 45%;
+  transform: translateX(-45%);
+  top: 20px;
+  padding: 21px 0px 40px 65px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.best_company p {
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 12px;
+  color: #14202c;
+}
+
+.urgent_call {
+  position: absolute;
+  background: url(../img/clock.png) no-repeat;
+  left: 55%;
+  transform: translateX(-55%);
+  top: 20px;
+  padding: 21px 0px 40px 65px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.info_centr {
+  margin-top: 50px;
+  display: inline-block;
+  float: right;
+  font-family: "Century Gothic", Arial, sans-serif;
+  color: #4a4a4a;
+}
+
+.info_centr p:nth-child(1) {
+  font-size: 12px;
+  color: #006b98;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.info_centr p:nth-child(2) {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.phone_number span:nth-child(2) {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.phone_number span:nth-child(3) {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.callback {
+  display: inline-block;
+  float: right;
+  margin-top: 7px;
+  border-bottom: 1px dashed #c63a5c;
+}
+
+#callback {
+  font-size: 12px;
+  color: #c63a5c;
+  margin: 0;
+  text-transform: none;
+}
+
+.callback:hover {
+  border-bottom: none;
+}
