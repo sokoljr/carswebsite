@@ -19,7 +19,7 @@ a {
 
 header {
   background: url(../img/main_bg.jpg) no-repeat;
-  background-position: top center;
+  background-position: center 0;
   min-height: 606px;
 }
 
@@ -157,4 +157,135 @@ top: 300px;
 
 .callback:hover {
   border-bottom: none;
+}
+
+main {
+  max-width: 1154px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+.left_panel {
+  float: left;
+}
+
+.side_nav {
+  padding: 0 0 34px 0;
+}
+
+.button_1 a {
+  background: url("../img/order_car.png") no-repeat;
+  display: block;
+  width: 333px;
+  height: 126px;
+  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f6f5f5;
+  text-shadow: 1px 1px 1px rgba(12,55,74,.37);
+  padding: 27px 12px 0 12px;
+  margin: -20px 0 27px 0;
+}
+
+.button_2 a {
+  background: url("../img/chekout.png") no-repeat;
+  display: block;
+  width: 343px;
+  height: 106px;
+  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f6f5f5;
+  text-shadow: 1px 1px 1px #5a6916;
+  padding: 22px 14px 0 12px;
+  margin: -17px 0 27px -11px;
+  text-align: right;
+}
+
+.button_3 a {
+  background: url("../img/sale.png") no-repeat;
+  display: block;
+  width: 331px;
+  height: 105px;
+  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f6f5f5;
+  text-shadow: 1px 1px 1px #a7781e;
+  padding: 21px 12px 0 12px;
+  margin: -16px 0 27px 0;
+}
+
+.reviews_wrapper {
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  padding: 20px 40px;
+  margin: 0 0 25px 0;
+  position: relative;
+}
+
+.reviews_wrapper h3 {
+  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0 0 20px 0;
+  color: #ab1e40;
+}
+
+.reviews {
+  width: 250px;
+  height: 282px;
+  overflow: hidden;
+  position:relative;
+}
+
+.reviews p {
+  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+.left_target {
+  width: 16px;
+  height: 23px;
+  background: url("../img/left_arrow.png") no-repeat;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999em;
+  overflow: hidden;
+  cursor: pointer;
+  left: 11px;
+  top: 150px;
+  position: absolute;
+  z-index: 5;
+}
+
+.rigt_target {
+  width: 16px;
+  height: 23px;
+  background: url("../img/right_arrow.png") right 0 no-repeat;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999em;
+  overflow: hidden;
+  cursor: pointer;
+  right: 11px;
+  top: 150px;
+  position: absolute;
+  z-index: 5;
+}
+
+.all_rewiews {
+  padding: 15px 0 0 0;
+  text-align: right;
+  font-size: 14px;
+}
+
+.all_rewiews a {
+  color: #e27b02;
+  border-bottom: 1px dashed #e27b02;
+  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
 }
