@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather widget</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="widget clearfix">
+		<div>
+			<input id="city_name" type="text" name="city_name" placeholder="Введите город">
+			<button id="get_weather">Узнать погоду</button>
+		</div>
+		<div id="main_weather"></div>
+	</div>
+	<div id="google_map"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g0XWD7ujP01vnrlYSnDaUo1dMdIabmw&language=ru"></script>	
+	<script src="js/script.js"></script>
+</body>
+</html>

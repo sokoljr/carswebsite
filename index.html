@@ -1,72 +1,146 @@
 <!DOCTYPE html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Transportation</title>
-</head>
-<body>
-	<header>
-		<nav class="header_menu">
-			<ul>
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Цены на услуги</a></li>
-				<li><a href="#">Оплатить услуги</a></li>
-				<li><a href="#">Отзывы клиентов</a></li>
-				<li><a href="#">Акции и скидки</a></li>
-				<li><a href="#">Сотрудничество</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-		<div class="header_content clearfix">
-			<div class="logo">
-				<a href="#"><img src="img/logo.png" alt="Ваш перевозчик зп"></a>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+		<!--<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>-->
+		<!--<link href="css/reset.css" rel="stylesheet" type="text/css"/>-->
+		<link href="css/slick.css" rel="stylesheet" type="text/css"/>
+        <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="css/weather_widzhet.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <title>Mercedes-Benz</title>
+        <body>
+        	<div class="brand">
+        		<h1>Mercedes-Benz</h1>
+        		<p>The best or nothing</p>
+        	</div>
+    		<div class="address_bar">
+    			<p>69035, Voznesenovskiy | Zaporizhzhya, Ukraine<p>
+    		</div>
+
+		    <nav class="navbar navbar-default" role="navigation">
+		        <div class="container">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		                    <span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">Mercedes-Benz</a>
+		            </div>
+		            <div class="collapse navbar-collapse" id="myNavbar">
+		                <ul class="nav navbar-nav">
+		                    <li><a href="index.html">Home</a></li>
+		                    <li><a href="about.html">About</a></li>
+		                    <li><a href="design.html">Design</a></li>
+		                    <li><a href="events.html">Events</a></li>
+		                    <li><a href="contact.html">Contact</a></li>
+		                    <li><a href="#your_weather">Weather</a></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </nav>
+
+		    <div class="container">
+		    	<div class="row">
+		    		<div class="box">
+                		<div class="col-lg-12 text-center">
+                			<div id="carousel-example-generic" class="carousel slide">
+		                        <ol class="carousel-indicators hidden-xs">
+		                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		                        </ol>
+		                        <div class="carousel-inner">
+		                            <div class="item active">
+		                            	<h2>Old GL Class</h2>
+		                                <img class="img-responsive img_full" src="img/slide_1.jpg" alt="">
+		                            </div>
+		                            <div class="item">
+		                            	<h2>Classic car</h2>
+		                                <img class="img-responsive img_full" src="img/slide_2.jpg" alt="">
+		                            </div>
+		                            <div class="item">
+		                            	<h2>Sport car</h2>
+		                                <img class="img-responsive img_full" src="img/slide_3.jpg" alt="">
+		                            </div>
+		                            <div class="item">
+		                            	<h2>New models</h2>
+		                                <img class="img-responsive img_full" src="img/slide_4.jpg" alt="">
+		                            </div>
+		                            <div class="item">
+		                            	<h2>Concept car</h2>
+		                                <img class="img-responsive img_full" src="img/slide_5.jpg" alt="">
+		                            </div>
+		                        </div>
+
+		                        <a class="left carousel-control arrows" href="#carousel-example-generic" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control arrows" href="#carousel-example-generic" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+		                    </div>
+		                    
+		                    <div class="bottom_brend">
+		                    	<p>Welcome to</p>
+		                    	<hr class="tagline">
+		                    	<h2>Mercedes-Benz centr</h2>
+							</div>
+
+						</div>
+                	</div>
+                </div>
+				
+				<div class="row">
+			        <div class="box">
+			            <div class="col-lg-12">
+			                
+			            </div>
+			        </div>
+			    </div>
+
+			    <div id="your_weather" class="row">
+			        <div class="box">
+			            <div class="col-lg-12 text-center">
+			                <div class="widget">
+								<div>
+									<input id="city_name" type="text" name="city_name" placeholder="Your city">
+									<button id="get_weather">Get weather</button>
+								</div>
+								<div id="main_weather"></div>
+							</div>
+							<div id="google_map"></div>
+			            </div>
+			        </div>
+			    </div>
 			</div>
-			<div class="select_car">
-				<a href="#"><img src="img/select_car.png" alt="select_car"></a>
-			</div>
-			<div class="best_company">
-				<p>Лучшая<br>транспортная<br>компания года</p>
-			</div>
-			<div class="urgent_call">
-				<p>Срочный вызов<br>за 15 минут</p>
-			</div>
-			<div class="info_centr">
-				<p>Для вас мы работаем круглосуточно!</p>
-				<p>Служба информационной поддержки</p>
-				<div class="phone_number">
-					<span><img src="img/24h.png" alt="Круглосуточно"></span>
-					<span>(061)</span>
-					<span>234-11-11</span>
-				</div>
-				<div class="callback">
-					<a href="#"><p id="callback">заказать обратный звонок</p></a>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="left_panel clearfix">
-			<ul class="side_nav">
-				<li class="button_1"><a href="#">Заказать машину<br><b>онлайн</b></a></li>
-				<li class="button_2"><a href="#">Оплата заказа<br>онлайн</a></li>
-				<li class="button_3"><a href="#">Акции и скидки</a></li>
-			</ul>
-			<div class="reviews_wrapper">
-				<h3>Комментарии</h3>
-				<div class="reviews">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quia omnis illum ullam quaerat porro pariatur voluptatibus accusantium officia ratione! Sunt praesentium doloremque error, nulla possimus ad fugiat iure porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-				<div class="left_target"></div>
-				<div class="rigt_target"></div>
-				<div class="all_rewiews">
-					<a href="#">Все отзывы</a>
-				</div>
-			</div>
-		</div>
-		<div class="main_content clearfix"></div>
-	</main>
-<script src="js/script.js" type="text/javascript"></script>
-</body>
+
+			<footer>
+			    <div class="container">
+			        <div class="row">
+			            <div class="col-lg-12 text-center">
+			                <p>Copyright &copy; 2016 Bootstrap Author</p>
+			            </div>
+			        </div>
+			    </div>
+			</footer>
+
+
+		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g0XWD7ujP01vnrlYSnDaUo1dMdIabmw&language=en"></script>
+		<script defer src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script defer src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script defer src="js/slick.min.js" type="text/javascript"></script>
+        <script defer src="js/weather_widzhet.js" type="text/javascript"></script>
+        <script defer src="js/main.js" type="text/javascript"></script>
+        </body>
+    </head>
 </html>

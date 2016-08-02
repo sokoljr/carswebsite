@@ -1,291 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 @font-face {
-  font-family: Comfortaa; 
-  src: url(../fonts/7fonts.ru_ComfortaaRegular.ttf);
+  	font-family: BebasNeue; 
+  	src: url(../fonts/BebasNeue.otf);
 }
 
-* {
-  box-sizing: border-box;  
+body {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-a {
-  text-decoration: none;
-}             
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;          
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-family: BebasNeue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-  background: url(../img/main_bg.jpg) no-repeat;
-  background-position: center 0;
-  min-height: 606px;
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
-nav.header_menu {                         
-  background-color: #c63a5c;
-  text-align: center;
-  box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
-  -moz-webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
-  -ms-webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
-  -o-webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
-  webkit-box-shadow: rgba(255,255,255,.4) 0 0 0 1px;
+hr {
+    max-width: 400px;
+    border-color: #999999;
 }
 
-nav.header_menu ul li {
-  text-align: center;
-  display: inline-block;
-  margin: 12px 0;
-  padding: 0 35px;
-  border-left: 1px dotted white;
+.brand, .address_bar {
+    display: none;
 }
 
-nav.header_menu ul li a {
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
-  color: white;
-  font-size: 12px;
-  text-transform: uppercase;
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
-nav.header_menu a:hover {
-  color: #e8ca30;
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
-nav.header_menu ul li:first-child {
-  padding-left: 0;
-  border-left: none;
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
-nav.header_menu ul li:last-child {
-  padding-right: 0;
-}   
-
-.header_content {
-  position: relative;
-  min-height: 566px;
-  max-width: 1154px;
-  margin: 0 auto;
+.img_full {
+    min-width: 100%;
 }
 
-.logo {
-  margin-top: 50px;
-  float: left;
+.item h2 {
+	display:none;
 }
 
-.select_car {
-position: absolute;
-top: 300px;
+.bottom_brend {
+	display: none;
 }
 
-.select_car img {
-  display: block;
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
-.best_company {
-  position: absolute;
-  background: url(../img/gold-medal.png) no-repeat;
-  left: 45%;
-  transform: translateX(-45%);
-  top: 20px;
-  padding: 21px 0px 40px 65px;
-  text-align: center;
-  white-space: nowrap;
+footer p {
+	font-family: "Open sans", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #777;
 }
 
-.best_company p {
-  font-family: "Century Gothic", Arial, sans-serif;
-  font-size: 12px;
-  color: #14202c;
+#your_weather {
+	display: none;
 }
 
-.urgent_call {
-  position: absolute;
-  background: url(../img/clock.png) no-repeat;
-  left: 65%;
-  transform: translateX(-65%);
-  top: 20px;
-  padding: 21px 0px 40px 65px;
-  text-align: center;
-  white-space: nowrap;
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        padding: 30px 0 10px;
+        text-align: center;
+    }
+
+    .brand h1 {
+    	font-family: BebasNeue, Helvetica, Arial, sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .brand p {
+    	font-family: "Open sans", Helvetica, Arial, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .address_bar {
+        display: inherit;
+        padding: 0 0 40px;
+        text-align: center;
+    }
+
+    .address_bar p {
+    	font-family: "Open sans", Helvetica, Arial, sans-serif;
+    	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    .nav > li > a {
+        padding: 35px;
+    }
+
+    .navbar-nav > li > a {
+        line-height: normal;
+        font-family: "Open sans", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .item h2 {
+    	display: inherit;
+		font-family: BebasNeue, Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+	    font-size: 45px;
+	    font-weight: 700;
+	    line-height: normal;
+	    color: #777;
+	    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	}
+
+	.bottom_brend {
+		display: inherit;
+	}
+	
+	.bottom_brend p {
+		color: #777;
+		font-family: "Open sans", Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		margin-top: 15px;
+	}
+
+	.bottom_brend h2 {
+		color: #777;
+		font-family: BebasNeue, Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		margin-top: 15px;
+	}
+
+	.tagline {
+		margin: 15px auto 3px;
+	    max-width: 250px;
+	    border-color: #999999;
+	}
+
+	#your_weather {
+		display: inherit;
+	}
+
 }
 
-.info_centr {
-  margin-top: 50px;
-  display: inline-block;
-  float: right;
-  font-family: "Century Gothic", Arial, sans-serif;
-  color: #4a4a4a;
-}
-
-.info_centr p:nth-child(1) {
-  font-size: 12px;
-  color: #006b98;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.info_centr p:nth-child(2) {
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.phone_number span:nth-child(2) {
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.phone_number span:nth-child(3) {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.callback {
-  display: inline-block;
-  float: right;
-  margin-top: 7px;
-  border-bottom: 1px dashed #c63a5c;
-}
-
-#callback {
-  font-size: 12px;
-  color: #c63a5c;
-  margin: 0;
-  text-transform: none;
-}
-
-.callback:hover {
-  border-bottom: none;
-}
-
-main {
-  max-width: 1154px;
-  margin: 0 auto;
-  padding-top: 35px;
-}
-
-.left_panel {
-  float: left;
-}
-
-.side_nav {
-  padding: 0 0 34px 0;
-}
-
-.button_1 a {
-  background: url("../img/order_car.png") no-repeat;
-  display: block;
-  width: 333px;
-  height: 126px;
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: #f6f5f5;
-  text-shadow: 1px 1px 1px rgba(12,55,74,.37);
-  padding: 27px 12px 0 12px;
-  margin: -20px 0 27px 0;
-}
-
-.button_2 a {
-  background: url("../img/chekout.png") no-repeat;
-  display: block;
-  width: 343px;
-  height: 106px;
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  color: #f6f5f5;
-  text-shadow: 1px 1px 1px #5a6916;
-  padding: 22px 14px 0 12px;
-  margin: -17px 0 27px -11px;
-  text-align: right;
-}
-
-.button_3 a {
-  background: url("../img/sale.png") no-repeat;
-  display: block;
-  width: 331px;
-  height: 105px;
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  color: #f6f5f5;
-  text-shadow: 1px 1px 1px #a7781e;
-  padding: 21px 12px 0 12px;
-  margin: -16px 0 27px 0;
-}
-
-.reviews_wrapper {
-  border-radius: 5px;
-  border: 1px solid #bdbdbd;
-  padding: 20px 40px;
-  margin: 0 0 25px 0;
-  position: relative;
-}
-
-.reviews_wrapper h3 {
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 0 0 20px 0;
-  color: #ab1e40;
-}
-
-.reviews {
-  width: 250px;
-  height: 282px;
-  overflow: hidden;
-  position:relative;
-}
-
-.reviews p {
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  color: #4a4a4a;
-  font-style: italic;
-}
-
-.left_target {
-  width: 16px;
-  height: 23px;
-  background: url("../img/left_arrow.png") no-repeat;
-  font-size: 0;
-  line-height: 0;
-  text-indent: -9999em;
-  overflow: hidden;
-  cursor: pointer;
-  left: 11px;
-  top: 150px;
-  position: absolute;
-  z-index: 5;
-}
-
-.rigt_target {
-  width: 16px;
-  height: 23px;
-  background: url("../img/right_arrow.png") right 0 no-repeat;
-  font-size: 0;
-  line-height: 0;
-  text-indent: -9999em;
-  overflow: hidden;
-  cursor: pointer;
-  right: 11px;
-  top: 150px;
-  position: absolute;
-  z-index: 5;
-}
-
-.all_rewiews {
-  padding: 15px 0 0 0;
-  text-align: right;
-  font-size: 14px;
-}
-
-.all_rewiews a {
-  color: #e27b02;
-  border-bottom: 1px dashed #e27b02;
-  font-family: "Century Gothic", CenturyGothic, Arial, AppleGothic, sans-serif;
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
