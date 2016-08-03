@@ -49,13 +49,31 @@ hr {
 .navbar-nav {
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
+
+.dropdown-menu {
+    min-width: 250px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 8px;
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu > li > a {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    color: #777; 
+} 
 
 .box {
     margin-bottom: 20px;
     padding: 30px 15px;
-    background: #fff;
     background: rgba(255,255,255,0.9);
 }
 
@@ -72,7 +90,6 @@ hr {
 }
 
 footer {
-    background: #fff;
     background: rgba(255,255,255,0.9);
 }
 
@@ -87,11 +104,32 @@ footer p {
 	display: none;
 }
 
+#scrollup {
+    position: fixed;
+    opacity: 0.5;
+    padding: 15px 10px 10px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    left: 15px; 
+    bottom: 30px;
+    display: none;
+    cursor: pointer;
+}
 
 
 
 
+@media screen and (max-width:768px) {
+    .dropdown-menu > li > a {
+        font-size: 10px;
+    }
 
+    .dropdown-menu li {
+        margin: 0;
+    }
+}
 
 @media screen and (min-width:768px) {
     .brand {
@@ -105,7 +143,7 @@ footer p {
         font-size: 70px;
         font-weight: 700;
         line-height: normal;
-        color: #fff;
+        color: #d9d9d9;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
 
@@ -114,7 +152,7 @@ footer p {
         font-size: 25px;
         font-weight: 700;
         line-height: normal;
-        color: #fff;
+        color: #d9d9d9;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
 
@@ -131,7 +169,7 @@ footer p {
         font-size: 25px;
         font-weight: 400;
         letter-spacing: 3px;
-        color: #fff;
+        color: #d9d9d9;
     }
 
     .navbar {
@@ -148,7 +186,6 @@ footer p {
 
     .navbar-default {
         border: none;
-        background: #fff;
         background: rgba(255,255,255,0.9);
     }
 
@@ -207,7 +244,6 @@ footer p {
 	#your_weather {
 		display: inherit;
 	}
-
 }
 
 @media screen and (min-width:1200px) {
