@@ -52,6 +52,20 @@ hr {
     letter-spacing: 1px;
 }
 
+#fixedMenu.normalize {
+    width:100%;
+}
+
+#fixedMenu.fixed {
+    position:fixed;
+    top:0; 
+    left:0;
+    width:100%;
+    border: none;
+    background: rgba(255,255,255,0.9);
+    z-index: 99999;
+}
+
 .dropdown-menu {
     min-width: 250px;
     background: rgba(255,255,255,0.9);
@@ -113,7 +127,7 @@ footer p {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     left: 15px; 
-    bottom: 30px;
+    bottom: 80px;
     display: none;
     cursor: pointer;
 }
@@ -122,12 +136,20 @@ footer p {
 
 
 @media screen and (max-width:768px) {
+    .nav li:last-child {
+        display: none;
+    }
+
     .dropdown-menu > li > a {
         font-size: 10px;
     }
 
     .dropdown-menu li {
         margin: 0;
+    }
+
+    .dropdown-menu li:last-child {
+        display: none;
     }
 }
 
