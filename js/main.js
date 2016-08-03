@@ -1,22 +1,28 @@
 $(document).ready(function() {
 	
-	var $myNavbar = $("#fixedMenu");
+	var $fixedMenu = $("#fixedMenu");
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 240 && $myNavbar.hasClass("normalize")) {
-			$myNavbar.fadeOut(300,function() {
+		if ($(this).scrollTop() > 240 && $fixedMenu.hasClass("normalize")) {
+			$fixedMenu.fadeOut(300,function() {
 				$(this).removeClass("normalize")
 				.addClass("fixed")
 				.fadeIn(300);
 			});
-		} else if ($(this).scrollTop() <= 240 && $myNavbar.hasClass("fixed")) {
-			$myNavbar.fadeOut(300,function()	{
+		} else if ($(this).scrollTop() <= 240 && $fixedMenu.hasClass("fixed")) {
+			$fixedMenu.fadeOut(300,function()	{
 				$(this).removeClass("fixed")
 					.addClass("normalize")
 					.fadeIn(300);
 			});
 		}
-	});			
+	});
 
+	$('#dropdown').has('.dropdown-menu').mouseover(function() {
+    	$(this).children('.dropdown-menu').stop().show(300);
+    	})
+    .mouseout(function() {
+    	$(this).children('.dropdown-menu').stop().hide(300);
+    	});	
 
 	$('.carousel').carousel({
         interval: 3000
