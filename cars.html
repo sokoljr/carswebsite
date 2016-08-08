@@ -3,20 +3,204 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-		<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
-		<!--<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>-->
-		<!--<link href="css/reset.css" rel="stylesheet" type="text/css"/>-->
-		<link href="css/slick.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>-->
+        <!--<link href="css/reset.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/slick.css" rel="stylesheet" type="text/css"/>
         <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="css/weather_widzhet.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <title>Cars</title>
         <body>
-        	
+        	<header>
+                <div class="brand">
+                    <h1>Mercedes-Benz</h1>
+                    <p>The best or nothing</p>
+                </div>
+                <div class="address_bar">
+                    <p>69035, Voznesenovskiy | Zaporizhzhya, Ukraine</p>
+                </div>
+            </header>
+
+            <nav id="fixedMenu" class="navbar navbar-default normalize" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Mercedes-Benz</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li id="dropdown" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"">About<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="cars.html">Cars</a></li>
+                                    <li><a href="design.html">Design</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#your_weather">Weather</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="cars.html">Cars</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#your_weather">Weather</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="box">
+                        <div class="col-lg-12">
+                            <div id="accordion">
+                                <h3>A-Class – Hatchback</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>B-Class – Multi Purpose Vehicle (MPV)</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>C-Class – Saloon, Estate, Coupé and Cabriolet</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>CLA-Class – 4 Door Coupé and Estate</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>CLS-Class – 4 Door Coupé and Estate</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>CLA-Class – 4 Door Coupé and Estate</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>E-Class – Saloon, Estate, Coupé and Cabriolet</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>G-Class – Sports Utility Vehicle (SUV)</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>GLA-Class – Compact Sports Utility Vehicle (SUV)/ Crossover</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>GLC-Class – Sports Utility Vehicle (SUV)</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>GLE-Class – Sports Utility Vehicle (SUV)</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>GLS-Class – Large Sports Utility Vehicle (SUV)</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>S-Class – Luxury Saloon, Coupé & Cabriolet</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>SL-Class – Grand Tourer</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>SLS-Class – Roadster</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>V-Class – Multi Purpose Vehicle (MPV)/ Van</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                                <h3>AMG GT – Sports car/ Supercar</h3>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, dui eu efficitur tempor, mauris justo bibendum quam, in euismod ligula felis ac lorem. Phasellus nec nibh odio. Mauris vitae libero ac ex dictum scelerisque vitae in purus. Nullam vitae neque egestas mauris fermentum luctus. Etiam ac diam ornare, gravida metus sed, eleifend lorem. Nam malesuada felis sed orci molestie accumsan. Donec consequat maximus nunc et pretium. Cras sed sem ut quam maximus euismod pretium eget nisi. Mauris pharetra finibus ipsum. Duis sit amet massa id quam volutpat euismod. Curabitur quam odio, aliquam a dolor sed, gravida dapibus est. Nullam non tortor at lacus dictum ullamcorper. Vivamus vitae massa egestas, placerat metus eu, accumsan nulla. Quisque id eros placerat, consequat dolor sit amet, tincidunt elit. Praesent sed enim vitae ante suscipit rhoncus eu in ante. In hac habitasse platea dictumst. Suspendisse lacinia orci a velit consectetur, et cursus metus condimentum. Ut porttitor at est non semper. Fusce suscipit posuere pharetra. Morbi pretium iaculis sapien non scelerisque. In id volutpat massa, sit amet pellentesque lectus. Maecenas pretium vel ante ac interdum. Ut faucibus ultrices eros. Mauris fringilla varius est quis viverra. Aliquam ac ligula rutrum, faucibus massa vel, aliquet eros.</p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <div id="your_weather" class="row">
+                    <div class="box">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="intro-text text-center">Free weather</h2>
+                            <hr>
+                            <div class="widget">
+                                <div>
+                                    <input id="city_name" type="text" name="city_name" placeholder="Your city">
+                                    <button id="get_weather">Get weather</button>
+                                </div>
+                                <div id="main_weather"></div>
+                            </div>
+                            <div id="google_map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <nav id="bottomNav" class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse">
+                            <ul id="bottomNavIcons" class="nav navbar-nav">
+                                <li><p>Mercedes-Benz on Social Web:</p></li>
+                                <li><a href="https://www.facebook.com/MercedesBenz" target="_blank"><img class="img-responsive" width="30px" height="30px" src="img/facebook.png"></a></li>
+                                <li><a href="https://plus.google.com/+MercedesBenz/posts" target="_blank"><img img class="img-responsive" width="30px" height="30px" src="img/google.png"></a></li>
+                                <li><a href="https://twitter.com/mercedesbenz" target="_blank"><img img class="img-responsive" width="30px" height="30px" src="img/twitter.png"></a></li>
+                                <li><a href="https://www.youtube.com/user/MercedesBenzTV" target="_blank"><img img class="img-responsive" width="30px" height="30px" src="img/instagram.png"></a></li>
+                                <li><a href="https://www.instagram.com/mercedesbenz/" target="_blank"><img img class="img-responsive" width="30px" height="30px" src="img/youTube.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav id="bottom_menu" class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="myNavbarBottom">
+                            <ul id="bottomUl" class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="cars.html">Cars</a></li>
+                                <li><a href="design.html">Design</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#your_weather">Weather</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="copyright">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </footer>
+
+            <div id="scrollup">
+                <img src="img/up.png" class="up" alt="back_top"/>
+            </div>
+
+
 			
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script defer src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g0XWD7ujP01vnrlYSnDaUo1dMdIabmw&language=en"></script>
+        <script defer src="js/jquery-ui.min.js" type="text/javascript"></script>
         <script defer src="js/bootstrap.min.js" type="text/javascript"></script>
         <script defer src="js/slick.min.js" type="text/javascript"></script>
+        <script defer src="js/weather_widzhet.js" type="text/javascript"></script>
         <script defer src="js/main.js" type="text/javascript"></script>
         </body>
     </head>

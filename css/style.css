@@ -146,6 +146,10 @@ hr {
     background: rgba(255,255,255,0.9);
 }
 
+#aboutToo p {
+    text-indent: 30px;
+}
+
 .img_full {
     min-width: 100%;
 }
@@ -256,7 +260,15 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width:1220px) {
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@media screen and (max-width:1200px) {
     .nav > li > a {
         padding: 20px 5px 20px 5px;
     }
@@ -328,10 +340,36 @@ footer {
     }  
 }
 
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
+
+
+// BEGIN CAR.html STYLE
+.ui-state-default {
+  border: none;
+  background-color: #fff;
+}
+
+.ui-widget-content {
+  border: none;
+  background-color: inherit;
+}
+
+.ui-accordion .ui-accordion-header {
+  font-size: 22px;
+  color: #777;
+  font-weight: 700;
+}
+
+.ui-state-active {
+    background: inherit;
+    border: 1px solid #777;
+}
+
+#accordion p {
+    text-indent: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .ui-accordion .ui-accordion-header {
+        font-size: 18px;
     }
 }

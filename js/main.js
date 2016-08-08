@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	$("body").css("display","none").fadeIn(1000);
 	
 	var $fixedMenu = $("#fixedMenu");
 	$(window).scroll(function() {
@@ -58,4 +60,10 @@ $(document).ready(function() {
     	}, 600);
     	return false;
 	});
+
+	$( function() {
+    	$( "#accordion" ).accordion ({
+    	heightStyle: "content",
+    	});
+  	});
 });
