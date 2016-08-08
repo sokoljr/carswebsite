@@ -26,7 +26,8 @@ h1,h2,h3,h4,h5,h6 {
 p {
     font-size: 1.25em;
     line-height: 1.6;
-    color: #000;
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    color: #777;
     margin: 0;
     padding: 0;
 }
@@ -134,8 +135,8 @@ hr {
 
 #bottomNav {
     margin: 0;
-    padding: 0;
-    background: rgba(255,255,255,0.9);
+    padding: 30px 0 30px 0;
+    background: none;
 }
 
 #bottomNavIcons {
@@ -146,13 +147,44 @@ hr {
     letter-spacing: 0;
 }
 
+#bottomNavIcons li {
+    margin: 0 10px 0 10px;
+}
+
+
 #bottomNavIcons > li > a {
     margin: 0;
     padding: 0;
 }
 
+footer {
+    background: rgba(255,255,255,0.9);
+}
+
+#bottom_menu {
+    background: none;
+    margin: 0;
+}
+
+#bottomUl {
+    float: left;
+}
+
+#bottomUl > li > a {
+    line-height: normal;
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding : 10px;
+}
+
 #your_weather {
 	display: none;
+}
+
+.copyright {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
 }
 
 #scrollup {
@@ -164,13 +196,22 @@ hr {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     left: 15px; 
-    bottom: 80px;
+    bottom: 160px;
     display: none;
     cursor: pointer;
 }
 
+@media screen and (min-width:1220px) {
+    .nav > li > a {
+            padding: 35px;
+        }
+}
 
-
+@media screen and (max-width:1220px) {
+    .nav > li > a {
+            padding: 20px 5px 20px 5px;
+        }
+}
 
 @media screen and (max-width:768px) {
     .nav li:last-child {
@@ -268,9 +309,6 @@ hr {
         table-layout: fixed;
     }
 
-    .nav > li > a {
-        padding: 35px;
-    }
 
     .navbar-nav > li > a {
         line-height: normal;
