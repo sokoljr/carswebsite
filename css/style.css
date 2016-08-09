@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: BebasNeue, Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    color: white;
+    color: #777;
     margin: 0;
     padding: 0;
 }
@@ -368,8 +368,116 @@ footer {
     text-indent: 30px;
 }
 
+.cars_box_page {
+    float: left;
+    margin-right: 20px;
+}
+
 @media screen and (max-width:768px) {
     .ui-accordion .ui-accordion-header {
         font-size: 18px;
+    }
+}
+
+
+// BEGIN DISIGN.html STYLE
+
+.slider_disign {
+  position: relative;
+}
+
+.slider_disign .slider_controls {
+  position: absolute;
+  height: 100px;
+  width: 29px;
+  top: 325px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider_disign .slider_controls.left {
+  left: 3%;
+  background-image: url('../img/arrow_left.png');
+}
+
+.slider_disign .slider_controls.right {
+  right: 3%;
+  background-image: url('../img/arrow_right.png');
+}
+
+.header_slick_slide {
+    position: absolute;
+}
+
+.header_slick_slide h4 {
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 30px;
+    color: #777;
+    text-transform: none;
+}
+
+.content_after_slider {
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 54px;
+}
+
+.content_after_slider h4 {
+    color: #777;
+    font-family: BebasNeue, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.disign_content {
+    margin: 0;
+    padding: 0;
+}
+
+.disign_content img {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .slider_disign .slider_controls {
+        top: 280px;
+    }
+
+    .header_slick_slide h4 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .slider_disign .slider_controls {
+        height: 70px;
+        top: 230px;
+    }
+
+    .header_slick_slide h4 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slider_disign .slider_controls {
+        height: 70px;
+        top: 200px;
+    }
+
+    .header_slick_slide {
+        display: none;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .slider_disign .slider_controls {
+        top: 50px;
+        height: 50px;
     }
 }

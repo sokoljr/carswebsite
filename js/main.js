@@ -66,4 +66,16 @@ $(document).ready(function() {
     	heightStyle: "content",
     	});
   	});
+
+  	$('#slick_slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		speed: 1000,
+		focusOnSelect: true,
+		prevArrow: $(".slider_disign .slider_controls.left"),
+		nextArrow: $(".slider_disign .slider_controls.right"),
+	});
+	$(".slider_disign .slider_controls")
 });
