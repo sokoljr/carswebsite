@@ -231,11 +231,19 @@ footer {
     float: left;
 }
 
+#bottomUl li {
+    border-right: 2px solid #777; 
+}
+
+#bottomUl li:last-child {
+    border: none;
+}
+
 #bottomUl > li > a {
     line-height: normal;
     font-family: "Open sans", Helvetica, Arial, sans-serif;
     font-size: 15px;
-    padding : 10px;
+    padding: 5px 20px 5px 20px; 
 }
 
 .copyright {
@@ -338,8 +346,6 @@ footer {
     }  
 }
 
-
-
 // BEGIN CAR.html STYLE
 .ui-state-default {
   border: none;
@@ -377,9 +383,7 @@ footer {
     }
 }
 
-
 // BEGIN DISIGN.html STYLE
-
 .slider_disign {
   position: relative;
 }
@@ -431,6 +435,10 @@ footer {
     margin-bottom: 15px;
 }
 
+.content_after_slider p {
+    text-indent: 40px;
+}
+
 .disign_content {
     margin: 0;
     padding: 0;
@@ -479,3 +487,5 @@ footer {
         height: 50px;
     }
 }
+
+// BEGIN EVENTS.html STYLE
