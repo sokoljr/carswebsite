@@ -25,7 +25,164 @@
                     </div>
                 </div>
             </header>
-            
+
+            <nav class="navbar navbar-default normalize" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Mercedes-Benz</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li id="dropdown" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="cars.html">Cars</a></li>
+                                    <li><a href="design.html">Design</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#your_weather">Weather</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="cars.html">Cars</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#your_weather">Weather</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="box">
+                        <div class="col-lg-12">
+                            <hr>
+                            <h2 class="intro-text text-center">Contact
+                                <strong>Mercedes-Benz</strong>
+                            </h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-8">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1624560.2429141153!2d35.03284710765708!3d48.0303527351828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc673dfa85bb03%3A0x7e675cd9074d3f4a!2sZaporizhia%2C+Zaporiz&#39;ka+oblast%2C+Ukraine!5e0!3m2!1sen!2sus!4v1470868521351" width="100%" height="400" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Phone:
+                                <strong>+3 (8097) 230-23-12</strong>
+                            </p>
+                            <p>Email:
+                                <strong><a href="mailto:name@example.com">name@email.com</a></strong>
+                            </p>
+                            <p>Address:
+                                <strong>69035, Voznesenovskiy<br>Zaporizhzhya, Ukraine</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="box">
+                        <div class="col-lg-12">
+                            <hr>
+                            <h2 class="intro-text text-center">Contact
+                                <strong>form</strong>
+                            </h2>
+                            <hr>
+                            <p>Should you have any questions or if you require any further information about Mercedes-Benz – we will lend a sympathetic ear to all your requests.</p>
+                            <form role="form">
+                                <div class="row">
+                                    <div class="form-group col-lg-4">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label>Email Address</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label>Phone Number</label>
+                                        <input type="tel" class="form-control">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="form-group col-lg-12">
+                                        <label>Message</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <input type="hidden" name="save" value="contact">
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="your_weather" class="row">
+                    <div class="box">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="intro-text text-center">Free weather</h2>
+                            <hr>
+                            <div class="widget">
+                                <div>
+                                    <input id="city_name" type="text" name="city_name" placeholder="Your city">
+                                    <button id="get_weather">Get weather</button>
+                                </div>
+                                <div id="main_weather"></div>
+                            </div>
+                            <div id="google_map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <nav id="bottomNav" class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse">
+                            <ul id="bottomNavIcons" class="nav navbar-nav">
+                                <li><p>Mercedes-Benz on Social Web:</p></li>
+                                <li><a href="https://www.facebook.com/MercedesBenz" target="_blank"><img class="img-responsive" width="30" height="30" src="img/facebook.png" alt="facebook"></a></li>
+                                <li><a href="https://plus.google.com/+MercedesBenz/posts" target="_blank"><img class="img-responsive" width="30" height="30" src="img/google.png" alt="google"></a></li>
+                                <li><a href="https://twitter.com/mercedesbenz" target="_blank"><img class="img-responsive" width="30" height="30" src="img/twitter.png" alt="twitter"></a></li>
+                                <li><a href="https://www.youtube.com/user/MercedesBenzTV" target="_blank"><img class="img-responsive" width="30" height="30" src="img/instagram.png" alt="instagram"></a></li>
+                                <li><a href="https://www.instagram.com/mercedesbenz/" target="_blank"><img class="img-responsive" width="30" height="30" src="img/youTube.png" alt="youTube"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="bottom_menu" class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="myNavbarBottom">
+                            <ul id="bottomUl" class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="cars.html">Cars</a></li>
+                                <li><a href="design.html">Design</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#your_weather">Weather</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="copyright">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </footer>
+
+                <div id="scrollup">
+                    <img src="img/up.png" class="up" alt="back_top"/>
+                </div>
             
         <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g0XWD7ujP01vnrlYSnDaUo1dMdIabmw&language=en"></script>
