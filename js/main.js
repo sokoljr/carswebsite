@@ -5,16 +5,16 @@ $(document).ready(function() {
 	var $fixedMenu = $("#fixedMenu");
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 240 && $fixedMenu.hasClass("normalize")) {
-			$fixedMenu.fadeOut(300,function() {
+			$fixedMenu.fadeOut(200,function() {
 				$(this).removeClass("normalize")
 				.addClass("fixed")
-				.fadeIn(300);
+				.fadeIn(200);
 			});
 		} else if ($(this).scrollTop() <= 240 && $fixedMenu.hasClass("fixed")) {
-			$fixedMenu.fadeOut(300,function()	{
+			$fixedMenu.fadeOut(200,function()	{
 				$(this).removeClass("fixed")
 					.addClass("normalize")
-					.fadeIn(300);
+					.fadeIn(200);
 			});
 		}
 	});

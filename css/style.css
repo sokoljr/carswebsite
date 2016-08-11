@@ -194,9 +194,14 @@ hr {
     margin-right: 25px;
 }
 
+.wrap_botom_nav {
+    padding: 40px 0 10px 0;
+}
+
 #bottomNav {
+    display: inline-block;
     margin: 0;
-    padding: 30px 0 30px 0;
+    padding: 0;
     background: none;
 }
 
@@ -223,6 +228,7 @@ footer {
 }
 
 #bottom_menu {
+    display: inline-block;
     background: none;
     margin: 0;
 }
@@ -247,7 +253,6 @@ footer {
 }
 
 .copyright {
-    text-align: center;
     margin: 20px auto 0;
     font-size: 12px;
 }
