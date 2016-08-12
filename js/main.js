@@ -97,7 +97,7 @@ $(document).ready(function() {
 		.done(function(msg) { // Проверка кода - условие
 			widget.empty();
 			if (msg.cod !== 200) {
-				widget.html("Eror - the city is not find").addClass('weather_result').css({'color': 'lightgray', 'font-size': '18px',});
+				widget.html("Eror - the city is not find").addClass('col-lg-12 weather_result').css({'color': 'red', 'font-size': '18px', 'font-family': 'Open sans'});
 				$('#google_map').css('display', 'none');
 			} 
 			else {

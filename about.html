@@ -73,19 +73,21 @@
 			        </div>
 			    </div>
 				<div id="your_weather" class="row">
-			        <div class="box">
-			            <div class="col-lg-12 text-center">
-							<h2 class="intro-text text-center">Free weather</h2>
-				            <hr>
-				            <div class="col-lg-6 text-center widget">
+			        <div class="box col-lg-12">
+						<h2 class="intro-text text-center">Free weather</h2>
+				        <hr>
+				        <div class="row">
+					        <div class="col-lg-6 text-center widget">
 								<div>
 									<input id="city_name" type="text" name="city_name" placeholder="Your city">
 									<button id="get_weather">Get weather</button>
 								</div>
-								<div id="main_weather"></div>
+								<div class="row">
+									<div id="main_weather" class="col-lg-12"></div>
+								</div>
 							</div>
 							<div id="google_map" class="col-lg-6"></div>
-			            </div>
+						</div>
 			        </div>
 			    </div>
 			</div>
