@@ -584,8 +584,7 @@ footer {
 #google_map {
     height: 447px;
     width: 437px;
-    float: right;
-    margin-top: 20px;
+    margin: 20px auto 0;
     border-radius: 15px;
     display: none;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 
