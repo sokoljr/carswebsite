@@ -19,12 +19,12 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#dropdown').has('.dropdown-menu').mouseover(function() {
+	/*$('#dropdown').has('.dropdown-menu').mouseover(function() {
     	$(this).children('.dropdown-menu').stop().show(300);
     	})
     .mouseout(function() {
     	$(this).children('.dropdown-menu').stop().hide(300);
-    	});	
+    	});*/
 
 	$('.carousel').carousel({
         interval: 3000
@@ -97,7 +97,7 @@ $(document).ready(function() {
 		.done(function(msg) { // Проверка кода - условие
 			widget.empty();
 			if (msg.cod !== 200) {
-				widget.html("Eror - the city is not find").addClass('col-md-12 weather_result').css({'color': 'lightgray', 'font-size': '18px',});
+				widget.html("Eror - the city is not find").addClass('col-md-12 weather_result').css({'color': 'red', 'font-size': '18px',});
 				$('#google_map').css('display', 'none');
 			} 
 			else {
