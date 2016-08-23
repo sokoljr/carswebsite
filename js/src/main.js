@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	var $fixedMenu = $("#fixedMenu");
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 240 && $fixedMenu.hasClass("normalize")) {
+		if ($(this).scrollTop() > 440 && $fixedMenu.hasClass("normalize")) {
 			$fixedMenu.fadeOut(200,function() {
 				$(this).removeClass("normalize")
 				.addClass("fixed")
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 	$( function() {
     	$( "#accordion" ).accordion ({
-    	heightStyle: "content",
+    	heightStyle: "content"
     	});
   	});
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
 		.done(function(msg) { // Проверка кода - условие
 			widget.empty();
 			if (msg.cod !== 200) {
-				widget.html("Eror - the city is not find").addClass('col-md-12 weather_result').css({'color': 'red', 'font-size': '18px',});
+				widget.html("Eror - city is not found").addClass('col-md-12 weather_result').css({'color': 'red', 'font-size': '18px',});
 				$('#google_map').css('display', 'none');
 			} 
 			else {

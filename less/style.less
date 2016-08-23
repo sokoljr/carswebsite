@@ -85,9 +85,7 @@ hr {
 }
 
 .nav {
-
     li {
-
         a {
             padding: 35px;
             line-height: normal;
@@ -149,7 +147,6 @@ hr {
 }
 
 .item {
-
     h2 {
         font-family: @font-bebas;
         text-transform: uppercase;
@@ -162,7 +159,6 @@ hr {
 }
 
 .bottom_brend {
-
     p {
         color: @font-color;
         font-family: @font-open;
@@ -197,46 +193,42 @@ hr {
     margin-right: 25px;
 }
 
-.wrap_botom_nav {
-    padding: 40px 0 0 0;
-}
-
-#bottomNav {
-	float: right;
-    display: inline-block;
-    .reset;
-    background: none;
-}
-
-#bottomNavIcons {
-    .reset;
-    float: left;
-    text-transform: none;
-    letter-spacing: 0;
-
+.bottom_menu {
+    margin-top: 13px;
+    
+    ul {
+        list-style: none;
+        .reset;
+        
         li {
-
+            display: inline-block;
+            padding: 20px 5px;
+            
             a {
-                .reset;
+                text-decoration: none;
+                font-family: @font-open;
+                font-size: 16px;
+                color: @font-color;
+            }
         }
     }
 }
 
-#bottom_menu {
-    display: inline-block;
-    background: none;
-    margin: 0;
-}
-
-#bottomUl {
-
-    li {
-
-        a {
-            line-height: normal;
-            font-family: @font-open;
-            font-size: 15px;
-            padding: 5px 5px 5px 5px; 
+.bottom_icon {
+    margin-top: 13px;
+    
+    ul {
+        list-style: none;
+        .reset;
+        
+        li {
+            display: inline-block;
+            padding: 10px 0;
+            
+            a {
+                text-decoration: none;
+                display: block;
+            }
         }
     }
 }
@@ -313,21 +305,25 @@ hr {
 
 footer {
     background: @bg-main-color;
+    position: relative;
 }
 
 .copyright {
- 	.marginMetrica;
+ 	.marginCopy;
     font-size: 12px;
 }
 
 .metrica {
-	.marginMetrica;
+	position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #scrollup {
     position: fixed;
+    
     opacity: 0.5;
-    padding: 15px 10px 10px;
+    padding: 5px 4px 4px;
     background: @bg-main-color;
     .border-radius(5px);
     left: 15px; 
@@ -381,27 +377,14 @@ footer {
                 font-size: 30px;
         }
     }
-
-    #bottomUl {
-
-	    li {
-
-	        a {
-	            font-size: 15px;
-	            padding: 10px 5px; 
-	        }
-	    }
-	}
-}
-
-@media screen and (max-width:980px) {
-	#bottomNav {
-		float: none;
-	}
-
-	.copyright {
-		text-align: center;
-	}
+    
+    .bottom_menu {
+        ul {
+            li {
+                padding: 20px 2px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -509,17 +492,28 @@ footer {
     #your_weather {
         display: none;
     }
-
-    .wrap_botom_nav {
-	    padding: 0 0 10px 0;
-	}
+    
+    .bottom_menu {
+        display: none;
+    }
+    
+    .bottom_icon {
+    margin-top: 13px;
+    
+        ul {
+            text-align: center;
+        }
+    }
+    
+    .metrica {
+        display: none;
+    }
 
     #scrollup {
     	width: 42px;
     	height: 42px;
 	    padding: 5px;
 	    left: 5px; 
-	    bottom: 60px;
 	}
 }
 
@@ -535,7 +529,6 @@ footer {
 }
 
 .ui-accordion { 
-    
     .ui-accordion-header {
         font-size: 22px;
         color: @font-color;
@@ -549,7 +542,6 @@ footer {
 }
 
 #accordion {
-    
     p {
         text-indent: @text-indent;
     }
@@ -574,7 +566,6 @@ footer {
 }
 
 .slider_disign {
-    
     .slider_controls {
         position: absolute;
         height: 100px;
@@ -624,8 +615,8 @@ footer {
 }
 
 .disign_content {
-    .reset
-
+    margin-bottom: 20px;
+    
     img {
         margin: 0 auto;
         cursor: pointer;
@@ -658,16 +649,13 @@ footer {
 }
 
 @media screen and (max-width:1200px) {
-    
     .slider_disign {
-
         .slider_controls {
             top: 280px;
         }
     }
 
     .header_slick_slide {
-        
         h4 {
             font-size: 35px;
         }
@@ -691,9 +679,7 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-    
     .slider_disign {
-
         .slider_controls {
             height: 70px;
             top: 200px;
@@ -712,9 +698,7 @@ footer {
 }
 
 @media screen and (max-width:520px) {
-    
     .slider_disign {
-
         .slider_controls {
             top: 50px;
             height: 50px;
@@ -732,9 +716,7 @@ footer {
 }
 
 .widget {
-
     div {
-
         input {
             background-color: lightgray;
             text-align: center;
